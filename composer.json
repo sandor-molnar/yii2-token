@@ -1,0 +1,48 @@
+{
+    "name": "sshpackages/yii2-token",
+    "description": "Yii2 token generation",
+    "type": "yii2",
+    "keywords": [
+        "sshpackages",
+        "yii",
+        "yii2",
+        "yii 2",
+        "extension",
+        "yii2",
+        "yii2-token"
+    ],
+    "homepage": "https://gitlab.com/sshpackages/yii2-token",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "SaSha",
+            "email": "molnar.sandor.benjamin@gmail.com",
+            "homepage": "https://molnarsandor.hu",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://gitlab.com/sshpackages/yii2-token/issues",
+        "source": "https://gitlab.com/sshpackages/yii2-token"
+    },
+    "require": {
+        "php": ">=7.2",
+        "yiisoft/yii2": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "squizlabs/php_codesniffer": "*",
+        "phpmd/phpmd": "@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "sshpackages\\yii2token\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
