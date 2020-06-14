@@ -5,6 +5,7 @@ namespace sshpackages\yii2token\models;
 use Yii;
 use yii\db\Expression;
 use yii\helpers\StringHelper;
+use yii\web\IdentityInterface;
 
 /**
  * This is the model class for table "token".
@@ -159,9 +160,11 @@ class Token extends \sshpackages\yii2token\models\bases\BaseToken
      * @param $type
      * @return bool
      */
-    public function isFor($type)
+    public function isFor($type = null)
     {
-        Yii::error((int)$this->type === (int)$type);
+        if (!$type) {
+            return true;
+        }
         return (int)$this->type === (int)$type;
     }
 
@@ -170,12 +173,25 @@ class Token extends \sshpackages\yii2token\models\bases\BaseToken
      * @param $type
      * @return bool
      */
-    public function isValid($type = self::TYPE_GLOBAL)
+    public function isValid($type = null)
     {
-        if (!$this->isFor($type) || $this->isUsed() || $this->isExpired()) {
+        if (($type !== null && !$this->isFor($type)) || $this->isUsed() || $this->isExpired()) {
             return false;
         }
 
         return true;
+    }
+
+    /**
+     * Get the user
+     * @return IdentityInterface
+     */
+    public function getUserEntity()
+    {
+        if ($this->entity_type === static::ENTITY_TYPE_USER) {
+            $identityClass = Yii::$app->user->identityClass;
+            return $identityClass::findOne(['id' => $this->entity_id]);
+        }
+        return null;
     }
 }
