@@ -1,9 +1,9 @@
 {
-    "name": "sshpackages/yii2-token",
+    "name": "sanyisasha/yii2-token",
     "description": "Yii2 token generation",
     "type": "yii2",
     "keywords": [
-        "sshpackages",
+        "sanyisasha",
         "yii",
         "yii2",
         "yii 2",
@@ -11,7 +11,7 @@
         "yii2",
         "yii2-token"
     ],
-    "homepage": "https://gitlab.com/sshpackages/yii2-token",
+    "homepage": "https://github.com/sanyisasha/yii2-token",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -22,8 +22,8 @@
         }
     ],
     "support": {
-        "issues": "https://gitlab.com/sshpackages/yii2-token/issues",
-        "source": "https://gitlab.com/sshpackages/yii2-token"
+        "issues": "https://github.com/sanyisasha/yii2-token/issues",
+        "source": "https://github.com/sanyisasha/yii2-token"
     },
     "require": {
         "php": ">=7.2",
@@ -37,7 +37,7 @@
     },
     "autoload": {
         "psr-4": {
-            "sshpackages\\yii2token\\": "src"
+            "sanyisasha\\yii2token\\": "src"
         }
     },
     "extra": {
