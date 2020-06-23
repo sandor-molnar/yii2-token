@@ -1,11 +1,11 @@
 <?php
 
-namespace sshpackages\yii2token\models\queries;
+namespace sanyisasha\yii2token\models\queries;
 
 /**
- * This is the ActiveQuery class for [[\sshpackages\yii2token\models\Token]].
+ * This is the ActiveQuery class for [[\sanyisasha\yii2token\models\Token]].
  *
- * @see \sshpackages\yii2token\models\Token
+ * @see \sanyisasha\yii2token\models\Token
  */
 class TokenQuery extends \yii\db\ActiveQuery
 {
@@ -32,7 +32,7 @@ class TokenQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \sshpackages\yii2token\models\Token[]|array
+     * @return \sanyisasha\yii2token\models\Token[]|array
      */
     public function all($db = null)
     {
@@ -41,7 +41,7 @@ class TokenQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \sshpackages\yii2token\models\Token|array|null
+     * @return \sanyisasha\yii2token\models\Token|array|null
      */
     public function one($db = null)
     {

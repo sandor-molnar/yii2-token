@@ -1,6 +1,6 @@
 <?php
 
-namespace sshpackages\yii2token\models;
+\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;

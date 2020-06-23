@@ -1,9 +1,9 @@
 <?php
 
-namespace sshpackages\yii2token\models\bases;
+namespace sanyisasha\yii2token\models\bases;
 
 use Yii;
-use sshpackages\yii2token\models\queries\TokenQuery;
+use sanyisasha\yii2token\models\queries\TokenQuery;
 
 /**
  * THIS IS AND AUTO GENERATED FILE. DO NOT CHANGE!
@@ -61,10 +61,10 @@ class BaseToken extends \yii\db\ActiveRecord
 
     /**
      * {@inheritdoc}
-     * @return \sshpackages\yii2token\models\queries\TokenQuery the active query used by this AR class.
+     * @return \sanyisasha\yii2token\models\queries\TokenQuery the active query used by this AR class.
      */
     public static function find()
     {
-        return new \sshpackages\yii2token\models\queries\TokenQuery(get_called_class());
+        return new \sanyisasha\yii2token\models\queries\TokenQuery(get_called_class());
     }
 }

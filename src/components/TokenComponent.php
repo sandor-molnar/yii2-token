@@ -1,8 +1,8 @@
 <?php
 
-namespace sshpackages\yii2token\components;
+namespace sanyisasha\yii2token\components;
 
-use sshpackages\yii2token\models\Token;
+use sanyisasha\yii2token\models\Token;
 use yii\base\Component;
 
 class TokenComponent extends Component

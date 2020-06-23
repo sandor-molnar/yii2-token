@@ -1,6 +1,6 @@
 <?php
 
-namespace sshpackages\yii2token\models;
+namespace sanyisasha\yii2token\models;
 
 use Yii;
 use yii\db\Expression;
@@ -11,7 +11,7 @@ use yii\web\IdentityInterface;
  * This is the model class for table "token".
  *
  */
-class Token extends \sshpackages\yii2token\models\bases\BaseToken
+class Token extends \sanyisasha\yii2token\models\bases\BaseToken
 {
     public const STATUS_UNUSED = 1;
     public const STATUS_USED = 2;

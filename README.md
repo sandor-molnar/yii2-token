@@ -3,7 +3,7 @@
 Telepítés composer használatával:
 
 ```bash
-$ composer require sshpackages/yii2-token
+$ composer require sanyisasha/yii2-token
 ```
 
 ## Használat
